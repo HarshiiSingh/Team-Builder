@@ -1,0 +1,674 @@
+[
+  {
+    "id": "alice",
+    "gameId": "zzz",
+    "name": "Alice",
+    "images": {
+      "circle": "/characters/zzz/alice/circle.png",
+      "full": "/characters/zzz/alice/full.png",
+      "interknot": "/characters/zzz/alice/interknot.png",
+      "select": "/characters/zzz/alice/select.png",
+      "trap": "/characters/zzz/alice/trap.png"
+    }
+  },
+  {
+    "id": "anby",
+    "gameId": "zzz",
+    "name": "Anby",
+    "images": {
+      "circle": "/characters/zzz/anby/circle.png",
+      "full": "/characters/zzz/anby/full.png",
+      "interknot": "/characters/zzz/anby/interknot.png",
+      "select": "/characters/zzz/anby/select.png",
+      "trap": "/characters/zzz/anby/trap.png"
+    }
+  },
+  {
+    "id": "anton",
+    "gameId": "zzz",
+    "name": "Anton",
+    "images": {
+      "circle": "/characters/zzz/anton/circle.png",
+      "full": "/characters/zzz/anton/full.png",
+      "interknot": "/characters/zzz/anton/interknot.png",
+      "select": "/characters/zzz/anton/select.png",
+      "trap": "/characters/zzz/anton/trap.png"
+    }
+  },
+  {
+    "id": "aria",
+    "gameId": "zzz",
+    "name": "Aria",
+    "images": {
+      "circle": "/characters/zzz/aria/circle.png",
+      "full": "/characters/zzz/aria/full.png",
+      "interknot": "/characters/zzz/aria/interknot.png",
+      "select": "/characters/zzz/aria/select.png",
+      "trap": "/characters/zzz/aria/trap.png"
+    }
+  },
+  {
+    "id": "astra-yao",
+    "gameId": "zzz",
+    "name": "Astra Yao",
+    "images": {
+      "circle": "/characters/zzz/astra-yao/circle.png",
+      "full": "/characters/zzz/astra-yao/full.png",
+      "interknot": "/characters/zzz/astra-yao/interknot.png",
+      "select": "/characters/zzz/astra-yao/select.png",
+      "trap": "/characters/zzz/astra-yao/trap.png"
+    }
+  },
+  {
+    "id": "banyue",
+    "gameId": "zzz",
+    "name": "Banyue",
+    "images": {
+      "circle": "/characters/zzz/banyue/circle.png",
+      "full": "/characters/zzz/banyue/full.png",
+      "interknot": "/characters/zzz/banyue/interknot.png",
+      "select": "/characters/zzz/banyue/select.png",
+      "trap": "/characters/zzz/banyue/trap.png"
+    }
+  },
+  {
+    "id": "ben",
+    "gameId": "zzz",
+    "name": "Ben",
+    "images": {
+      "circle": "/characters/zzz/ben/circle.png",
+      "full": "/characters/zzz/ben/full.png",
+      "interknot": "/characters/zzz/ben/interknot.png",
+      "select": "/characters/zzz/ben/select.png",
+      "trap": "/characters/zzz/ben/trap.png"
+    }
+  },
+  {
+    "id": "billy",
+    "gameId": "zzz",
+    "name": "Billy",
+    "images": {
+      "circle": "/characters/zzz/billy/circle.png",
+      "full": "/characters/zzz/billy/full.png",
+      "interknot": "/characters/zzz/billy/interknot.png",
+      "select": "/characters/zzz/billy/select.png",
+      "trap": "/characters/zzz/billy/trap.png"
+    }
+  },
+  {
+    "id": "burnice",
+    "gameId": "zzz",
+    "name": "Burnice",
+    "images": {
+      "circle": "/characters/zzz/burnice/circle.png",
+      "full": "/characters/zzz/burnice/full.png",
+      "interknot": "/characters/zzz/burnice/interknot.png",
+      "select": "/characters/zzz/burnice/select.png",
+      "trap": "/characters/zzz/burnice/trap.png"
+    }
+  },
+  {
+    "id": "caesar",
+    "gameId": "zzz",
+    "name": "Caesar",
+    "images": {
+      "circle": "/characters/zzz/caesar/circle.png",
+      "full": "/characters/zzz/caesar/full.png",
+      "interknot": "/characters/zzz/caesar/interknot.png",
+      "select": "/characters/zzz/caesar/select.png",
+      "trap": "/characters/zzz/caesar/trap.png"
+    }
+  },
+  {
+    "id": "cissia",
+    "gameId": "zzz",
+    "name": "Cissia",
+    "images": {
+      "circle": "/characters/zzz/cissia/circle.png",
+      "full": "/characters/zzz/cissia/full.png",
+      "interknot": "/characters/zzz/cissia/interknot.png",
+      "select": "/characters/zzz/cissia/select.png",
+      "trap": "/characters/zzz/cissia/trap.png"
+    }
+  },
+  {
+    "id": "corin",
+    "gameId": "zzz",
+    "name": "Corin",
+    "images": {
+      "circle": "/characters/zzz/corin/circle.png",
+      "full": "/characters/zzz/corin/full.png",
+      "interknot": "/characters/zzz/corin/interknot.png",
+      "select": "/characters/zzz/corin/select.png",
+      "trap": "/characters/zzz/corin/trap.png"
+    }
+  },
+  {
+    "id": "dialyn",
+    "gameId": "zzz",
+    "name": "Dialyn",
+    "images": {
+      "circle": "/characters/zzz/dialyn/circle.png",
+      "full": "/characters/zzz/dialyn/full.png",
+      "interknot": "/characters/zzz/dialyn/interknot.png",
+      "select": "/characters/zzz/dialyn/select.png",
+      "trap": "/characters/zzz/dialyn/trap.png"
+    }
+  },
+  {
+    "id": "ellen",
+    "gameId": "zzz",
+    "name": "Ellen",
+    "images": {
+      "circle": "/characters/zzz/ellen/circle.png",
+      "full": "/characters/zzz/ellen/full.png",
+      "interknot": "/characters/zzz/ellen/interknot.png",
+      "select": "/characters/zzz/ellen/select.png",
+      "trap": "/characters/zzz/ellen/trap.png"
+    }
+  },
+  {
+    "id": "evelyn",
+    "gameId": "zzz",
+    "name": "Evelyn",
+    "images": {
+      "circle": "/characters/zzz/evelyn/circle.png",
+      "full": "/characters/zzz/evelyn/full.png",
+      "interknot": "/characters/zzz/evelyn/interknot.png",
+      "select": "/characters/zzz/evelyn/select.png",
+      "trap": "/characters/zzz/evelyn/trap.png"
+    }
+  },
+  {
+    "id": "grace",
+    "gameId": "zzz",
+    "name": "Grace",
+    "images": {
+      "circle": "/characters/zzz/grace/circle.png",
+      "full": "/characters/zzz/grace/full.png",
+      "interknot": "/characters/zzz/grace/interknot.png",
+      "select": "/characters/zzz/grace/select.png",
+      "trap": "/characters/zzz/grace/trap.png"
+    }
+  },
+  {
+    "id": "harumasa",
+    "gameId": "zzz",
+    "name": "Harumasa",
+    "images": {
+      "circle": "/characters/zzz/harumasa/circle.png",
+      "full": "/characters/zzz/harumasa/full.png",
+      "interknot": "/characters/zzz/harumasa/interknot.png",
+      "select": "/characters/zzz/harumasa/select.png",
+      "trap": "/characters/zzz/harumasa/trap.png"
+    }
+  },
+  {
+    "id": "hugo",
+    "gameId": "zzz",
+    "name": "Hugo",
+    "images": {
+      "circle": "/characters/zzz/hugo/circle.png",
+      "full": "/characters/zzz/hugo/full.png",
+      "interknot": "/characters/zzz/hugo/interknot.png",
+      "select": "/characters/zzz/hugo/select.png",
+      "trap": "/characters/zzz/hugo/trap.png"
+    }
+  },
+  {
+    "id": "jane",
+    "gameId": "zzz",
+    "name": "Jane",
+    "images": {
+      "circle": "/characters/zzz/jane/circle.png",
+      "full": "/characters/zzz/jane/full.png",
+      "interknot": "/characters/zzz/jane/interknot.png",
+      "select": "/characters/zzz/jane/select.png",
+      "trap": "/characters/zzz/jane/trap.png"
+    }
+  },
+  {
+    "id": "ju-fufu",
+    "gameId": "zzz",
+    "name": "Ju Fufu",
+    "images": {
+      "circle": "/characters/zzz/ju-fufu/circle.png",
+      "full": "/characters/zzz/ju-fufu/full.png",
+      "interknot": "/characters/zzz/ju-fufu/interknot.png",
+      "select": "/characters/zzz/ju-fufu/select.png",
+      "trap": "/characters/zzz/ju-fufu/trap.png"
+    }
+  },
+  {
+    "id": "koleda",
+    "gameId": "zzz",
+    "name": "Koleda",
+    "images": {
+      "circle": "/characters/zzz/koleda/circle.png",
+      "full": "/characters/zzz/koleda/full.png",
+      "interknot": "/characters/zzz/koleda/interknot.png",
+      "select": "/characters/zzz/koleda/select.png",
+      "trap": "/characters/zzz/koleda/trap.png"
+    }
+  },
+  {
+    "id": "lighter",
+    "gameId": "zzz",
+    "name": "Lighter",
+    "images": {
+      "circle": "/characters/zzz/lighter/circle.png",
+      "full": "/characters/zzz/lighter/full.png",
+      "interknot": "/characters/zzz/lighter/interknot.png",
+      "select": "/characters/zzz/lighter/select.png",
+      "trap": "/characters/zzz/lighter/trap.png"
+    }
+  },
+  {
+    "id": "lucia",
+    "gameId": "zzz",
+    "name": "Lucia",
+    "images": {
+      "circle": "/characters/zzz/lucia/circle.png",
+      "full": "/characters/zzz/lucia/full.png",
+      "interknot": "/characters/zzz/lucia/interknot.png",
+      "select": "/characters/zzz/lucia/select.png",
+      "trap": "/characters/zzz/lucia/trap.png"
+    }
+  },
+  {
+    "id": "lucy",
+    "gameId": "zzz",
+    "name": "Lucy",
+    "images": {
+      "circle": "/characters/zzz/lucy/circle.png",
+      "full": "/characters/zzz/lucy/full.png",
+      "interknot": "/characters/zzz/lucy/interknot.png",
+      "select": "/characters/zzz/lucy/select.png",
+      "trap": "/characters/zzz/lucy/trap.png"
+    }
+  },
+  {
+    "id": "lycaon",
+    "gameId": "zzz",
+    "name": "Lycaon",
+    "images": {
+      "circle": "/characters/zzz/lycaon/circle.png",
+      "full": "/characters/zzz/lycaon/full.png",
+      "interknot": "/characters/zzz/lycaon/interknot.png",
+      "select": "/characters/zzz/lycaon/select.png",
+      "trap": "/characters/zzz/lycaon/trap.png"
+    }
+  },
+  {
+    "id": "manato",
+    "gameId": "zzz",
+    "name": "Manato",
+    "images": {
+      "circle": "/characters/zzz/manato/circle.png",
+      "full": "/characters/zzz/manato/full.png",
+      "interknot": "/characters/zzz/manato/interknot.png",
+      "select": "/characters/zzz/manato/select.png",
+      "trap": "/characters/zzz/manato/trap.png"
+    }
+  },
+  {
+    "id": "miyabi",
+    "gameId": "zzz",
+    "name": "Miyabi",
+    "images": {
+      "circle": "/characters/zzz/miyabi/circle.png",
+      "full": "/characters/zzz/miyabi/full.png",
+      "interknot": "/characters/zzz/miyabi/interknot.png",
+      "select": "/characters/zzz/miyabi/select.png",
+      "trap": "/characters/zzz/miyabi/trap.png"
+    }
+  },
+  {
+    "id": "nangong-yu",
+    "gameId": "zzz",
+    "name": "Nangong Yu",
+    "images": {
+      "circle": "/characters/zzz/nangong-yu/circle.png",
+      "full": "/characters/zzz/nangong-yu/full.png",
+      "interknot": "/characters/zzz/nangong-yu/interknot.png",
+      "select": "/characters/zzz/nangong-yu/select.png",
+      "trap": "/characters/zzz/nangong-yu/trap.png"
+    }
+  },
+  {
+    "id": "nekomata",
+    "gameId": "zzz",
+    "name": "Nekomata",
+    "images": {
+      "circle": "/characters/zzz/nekomata/circle.png",
+      "full": "/characters/zzz/nekomata/full.png",
+      "interknot": "/characters/zzz/nekomata/interknot.png",
+      "select": "/characters/zzz/nekomata/select.png",
+      "trap": "/characters/zzz/nekomata/trap.png"
+    }
+  },
+  {
+    "id": "nicole",
+    "gameId": "zzz",
+    "name": "Nicole",
+    "images": {
+      "circle": "/characters/zzz/nicole/circle.png",
+      "full": "/characters/zzz/nicole/full.png",
+      "interknot": "/characters/zzz/nicole/interknot.png",
+      "select": "/characters/zzz/nicole/select.png",
+      "trap": "/characters/zzz/nicole/trap.png"
+    }
+  },
+  {
+    "id": "norma",
+    "gameId": "zzz",
+    "name": "Norma",
+    "images": {
+      "circle": "/characters/zzz/norma/circle.png",
+      "full": "/characters/zzz/norma/full.png",
+      "interknot": "/characters/zzz/norma/interknot.png",
+      "select": "/characters/zzz/norma/select.png",
+      "trap": "/characters/zzz/norma/trap.png"
+    }
+  },
+  {
+    "id": "orphie-magus",
+    "gameId": "zzz",
+    "name": "Orphie & Magus",
+    "images": {
+      "circle": "/characters/zzz/orphie-magus/circle.png",
+      "full": "/characters/zzz/orphie-magus/full.png",
+      "interknot": "/characters/zzz/orphie-magus/interknot.png",
+      "select": "/characters/zzz/orphie-magus/select.png",
+      "trap": "/characters/zzz/orphie-magus/trap.png"
+    }
+  },
+  {
+    "id": "pan-yinhu",
+    "gameId": "zzz",
+    "name": "Pan Yinhu",
+    "images": {
+      "circle": "/characters/zzz/pan-yinhu/circle.png",
+      "full": "/characters/zzz/pan-yinhu/full.png",
+      "interknot": "/characters/zzz/pan-yinhu/interknot.png",
+      "select": "/characters/zzz/pan-yinhu/select.png",
+      "trap": "/characters/zzz/pan-yinhu/trap.png"
+    }
+  },
+  {
+    "id": "piper",
+    "gameId": "zzz",
+    "name": "Piper",
+    "images": {
+      "circle": "/characters/zzz/piper/circle.png",
+      "full": "/characters/zzz/piper/full.png",
+      "interknot": "/characters/zzz/piper/interknot.png",
+      "select": "/characters/zzz/piper/select.png",
+      "trap": "/characters/zzz/piper/trap.png"
+    }
+  },
+  {
+    "id": "promeia",
+    "gameId": "zzz",
+    "name": "Promeia",
+    "images": {
+      "circle": "/characters/zzz/promeia/circle.png",
+      "full": "/characters/zzz/promeia/full.png",
+      "interknot": "/characters/zzz/promeia/interknot.png",
+      "select": "/characters/zzz/promeia/select.png",
+      "trap": "/characters/zzz/promeia/trap.png"
+    }
+  },
+  {
+    "id": "pulchra",
+    "gameId": "zzz",
+    "name": "Pulchra",
+    "images": {
+      "circle": "/characters/zzz/pulchra/circle.png",
+      "full": "/characters/zzz/pulchra/full.png",
+      "interknot": "/characters/zzz/pulchra/interknot.png",
+      "select": "/characters/zzz/pulchra/select.png",
+      "trap": "/characters/zzz/pulchra/trap.png"
+    }
+  },
+  {
+    "id": "pyrois",
+    "gameId": "zzz",
+    "name": "Pyrois",
+    "images": {
+      "circle": "/characters/zzz/pyrois/circle.png",
+      "full": "/characters/zzz/pyrois/full.png",
+      "interknot": "/characters/zzz/pyrois/interknot.png",
+      "select": "/characters/zzz/pyrois/select.png",
+      "trap": "/characters/zzz/pyrois/trap.png"
+    }
+  },
+  {
+    "id": "qingyi",
+    "gameId": "zzz",
+    "name": "Qingyi",
+    "images": {
+      "circle": "/characters/zzz/qingyi/circle.png",
+      "full": "/characters/zzz/qingyi/full.png",
+      "interknot": "/characters/zzz/qingyi/interknot.png",
+      "select": "/characters/zzz/qingyi/select.png",
+      "trap": "/characters/zzz/qingyi/trap.png"
+    }
+  },
+  {
+    "id": "rina",
+    "gameId": "zzz",
+    "name": "Rina",
+    "images": {
+      "circle": "/characters/zzz/rina/circle.png",
+      "full": "/characters/zzz/rina/full.png",
+      "interknot": "/characters/zzz/rina/interknot.png",
+      "select": "/characters/zzz/rina/select.png",
+      "trap": "/characters/zzz/rina/trap.png"
+    }
+  },
+  {
+    "id": "seed",
+    "gameId": "zzz",
+    "name": "Seed",
+    "images": {
+      "circle": "/characters/zzz/seed/circle.png",
+      "full": "/characters/zzz/seed/full.png",
+      "interknot": "/characters/zzz/seed/interknot.png",
+      "select": "/characters/zzz/seed/select.png",
+      "trap": "/characters/zzz/seed/trap.png"
+    }
+  },
+  {
+    "id": "seth",
+    "gameId": "zzz",
+    "name": "Seth",
+    "images": {
+      "circle": "/characters/zzz/seth/circle.png",
+      "full": "/characters/zzz/seth/full.png",
+      "interknot": "/characters/zzz/seth/interknot.png",
+      "select": "/characters/zzz/seth/select.png",
+      "trap": "/characters/zzz/seth/trap.png"
+    }
+  },
+  {
+    "id": "soldier0-anby",
+    "gameId": "zzz",
+    "name": "Soldier 0 - Anby",
+    "images": {
+      "circle": "/characters/zzz/soldier0-anby/circle.png",
+      "full": "/characters/zzz/soldier0-anby/full.png",
+      "interknot": "/characters/zzz/soldier0-anby/interknot.png",
+      "select": "/characters/zzz/soldier0-anby/select.png",
+      "trap": "/characters/zzz/soldier0-anby/trap.png"
+    }
+  },
+  {
+    "id": "soldier11",
+    "gameId": "zzz",
+    "name": "Soldier11",
+    "images": {
+      "circle": "/characters/zzz/soldier11/circle.png",
+      "full": "/characters/zzz/soldier11/full.png",
+      "interknot": "/characters/zzz/soldier11/interknot.png",
+      "select": "/characters/zzz/soldier11/select.png",
+      "trap": "/characters/zzz/soldier11/trap.png"
+    }
+  },
+  {
+    "id": "soukaku",
+    "gameId": "zzz",
+    "name": "Soukaku",
+    "images": {
+      "circle": "/characters/zzz/soukaku/circle.png",
+      "full": "/characters/zzz/soukaku/full.png",
+      "interknot": "/characters/zzz/soukaku/interknot.png",
+      "select": "/characters/zzz/soukaku/select.png",
+      "trap": "/characters/zzz/soukaku/trap.png"
+    }
+  },
+  {
+    "id": "starlight-billy",
+    "gameId": "zzz",
+    "name": "Starlight Billy",
+    "images": {
+      "circle": "/characters/zzz/starlight-billy/circle.png",
+      "full": "/characters/zzz/starlight-billy/full.png",
+      "interknot": "/characters/zzz/starlight-billy/interknot.png",
+      "select": "/characters/zzz/starlight-billy/select.png",
+      "trap": "/characters/zzz/starlight-billy/trap.png"
+    }
+  },
+  {
+    "id": "sunna",
+    "gameId": "zzz",
+    "name": "Sunna",
+    "images": {
+      "circle": "/characters/zzz/sunna/circle.png",
+      "full": "/characters/zzz/sunna/full.png",
+      "interknot": "/characters/zzz/sunna/interknot.png",
+      "select": "/characters/zzz/sunna/select.png",
+      "trap": "/characters/zzz/sunna/trap.png"
+    }
+  },
+  {
+    "id": "trigger",
+    "gameId": "zzz",
+    "name": "Trigger",
+    "images": {
+      "circle": "/characters/zzz/trigger/circle.png",
+      "full": "/characters/zzz/trigger/full.png",
+      "interknot": "/characters/zzz/trigger/interknot.png",
+      "select": "/characters/zzz/trigger/select.png",
+      "trap": "/characters/zzz/trigger/trap.png"
+    }
+  },
+  {
+    "id": "velina",
+    "gameId": "zzz",
+    "name": "Velina",
+    "images": {
+      "circle": "/characters/zzz/velina/circle.png",
+      "full": "/characters/zzz/velina/full.png",
+      "interknot": "/characters/zzz/velina/interknot.png",
+      "select": "/characters/zzz/velina/select.png",
+      "trap": "/characters/zzz/velina/trap.png"
+    }
+  },
+  {
+    "id": "vivian",
+    "gameId": "zzz",
+    "name": "Vivian",
+    "images": {
+      "circle": "/characters/zzz/vivian/circle.png",
+      "full": "/characters/zzz/vivian/full.png",
+      "interknot": "/characters/zzz/vivian/interknot.png",
+      "select": "/characters/zzz/vivian/select.png",
+      "trap": "/characters/zzz/vivian/trap.png"
+    }
+  },
+  {
+    "id": "yanagi",
+    "gameId": "zzz",
+    "name": "Yanagi",
+    "images": {
+      "circle": "/characters/zzz/yanagi/circle.png",
+      "full": "/characters/zzz/yanagi/full.png",
+      "interknot": "/characters/zzz/yanagi/interknot.png",
+      "select": "/characters/zzz/yanagi/select.png",
+      "trap": "/characters/zzz/yanagi/trap.png"
+    }
+  },
+  {
+    "id": "ye-shunguang",
+    "gameId": "zzz",
+    "name": "Ye Shunguang",
+    "images": {
+      "circle": "/characters/zzz/ye-shunguang/circle.png",
+      "full": "/characters/zzz/ye-shunguang/full.png",
+      "interknot": "/characters/zzz/ye-shunguang/interknot.png",
+      "select": "/characters/zzz/ye-shunguang/select.png",
+      "trap": "/characters/zzz/ye-shunguang/trap.png"
+    }
+  },
+  {
+    "id": "yidhari",
+    "gameId": "zzz",
+    "name": "Yidhari",
+    "images": {
+      "circle": "/characters/zzz/yidhari/circle.png",
+      "full": "/characters/zzz/yidhari/full.png",
+      "interknot": "/characters/zzz/yidhari/interknot.png",
+      "select": "/characters/zzz/yidhari/select.png",
+      "trap": "/characters/zzz/yidhari/trap.png"
+    }
+  },
+  {
+    "id": "yixuan",
+    "gameId": "zzz",
+    "name": "Yixuan",
+    "images": {
+      "circle": "/characters/zzz/yixuan/circle.png",
+      "full": "/characters/zzz/yixuan/full.png",
+      "interknot": "/characters/zzz/yixuan/interknot.png",
+      "select": "/characters/zzz/yixuan/select.png",
+      "trap": "/characters/zzz/yixuan/trap.png"
+    }
+  },
+  {
+    "id": "yuzuha",
+    "gameId": "zzz",
+    "name": "Yuzuha",
+    "images": {
+      "circle": "/characters/zzz/yuzuha/circle.png",
+      "full": "/characters/zzz/yuzuha/full.png",
+      "interknot": "/characters/zzz/yuzuha/interknot.png",
+      "select": "/characters/zzz/yuzuha/select.png",
+      "trap": "/characters/zzz/yuzuha/trap.png"
+    }
+  },
+  {
+    "id": "zhao",
+    "gameId": "zzz",
+    "name": "Zhao",
+    "images": {
+      "circle": "/characters/zzz/zhao/circle.png",
+      "full": "/characters/zzz/zhao/full.png",
+      "interknot": "/characters/zzz/zhao/interknot.png",
+      "select": "/characters/zzz/zhao/select.png",
+      "trap": "/characters/zzz/zhao/trap.png"
+    }
+  },
+  {
+    "id": "zhu-yuan",
+    "gameId": "zzz",
+    "name": "Zhu Yuan",
+    "images": {
+      "circle": "/characters/zzz/zhu-yuan/circle.png",
+      "full": "/characters/zzz/zhu-yuan/full.png",
+      "interknot": "/characters/zzz/zhu-yuan/interknot.png",
+      "select": "/characters/zzz/zhu-yuan/select.png",
+      "trap": "/characters/zzz/zhu-yuan/trap.png"
+    }
+  }
+]

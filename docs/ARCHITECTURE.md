@@ -211,6 +211,11 @@ Represents a playable character from a game.
 A Character belongs to the game catalog.
 
 Characters never store board position.
+Characters are shared application data, not board state.
+
+Recommended location:
+
+`src/core/characters.ts`
 
 Example:
 
@@ -243,6 +248,10 @@ interface BoardNode {
 ```
 
 This separation prevents catalog data from becoming mixed with board state.
+
+Multiple BoardNodes may reference the same `characterId`.
+This is how duplicate placements of one character are supported without
+duplicating the Character itself.
 
 ---
 
@@ -278,6 +287,18 @@ interface Board {
 ```
 
 Only one game is supported per board.
+
+Recommended location:
+
+`src/core/board.ts`
+
+This file should contain board-state models such as:
+
+- `BoardNode`
+- `BoardEdge`
+- `Board`
+
+It should not contain catalog models such as `Character`.
 
 ---
 
@@ -342,6 +363,9 @@ interface GameProvider {
 ```
 
 The editor communicates with providers rather than individual APIs.
+
+A provider or adapter is responsible for converting game-specific records into
+shared `Character` models before the rest of the application consumes them.
 
 ---
 

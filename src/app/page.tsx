@@ -1,3 +1,4 @@
+import { zzzCharacters } from "@/games/zzz";
 export default function HomePage() {
   return (
     <main>

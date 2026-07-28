@@ -140,7 +140,7 @@ An additional lookup is required when rendering nodes.
 
 ---
 
-# ADR-004 — Normalize External APIs
+# ADR-004 — Normalize External Data Sources
 
 **Status**
 
@@ -148,16 +148,19 @@ Accepted
 
 ## Context
 
-The application retrieves character information from Hakush.
+The application retrieves character information from game-specific raw data
+sources.
 
-External APIs may change over time.
+Those sources may change structure over time, whether they are local curated
+files, scripts, or future providers.
 
-Using raw API responses throughout the project would tightly couple the
-application to one provider.
+Using raw source data throughout the project would tightly couple the
+application to one format.
 
 ## Decision
 
-Every external API is wrapped by an adapter.
+Every game-specific data source is normalized by an adapter or provider
+boundary.
 
 ```text
 API
@@ -167,7 +170,7 @@ Adapter
 Application Models
 ```
 
-The UI never consumes raw API responses.
+The UI never consumes raw source data directly.
 
 ## Consequences
 
@@ -176,7 +179,7 @@ The UI never consumes raw API responses.
 - Easier maintenance
 - Easier testing
 - Easier support for additional games
-- Reduced impact from API changes
+- Reduced impact from source-format changes
 
 ### Tradeoffs
 
@@ -256,7 +259,7 @@ Dependencies are introduced gradually rather than all at once.
 
 ---
 
-# ADR-007 — Mock Data Before Live APIs
+# ADR-007 — Local Data Before New Providers
 
 **Status**
 
@@ -264,16 +267,17 @@ Accepted
 
 ## Context
 
-Building UI while depending on a live API slows development and introduces
-external failures.
+Building UI while depending on a changing external provider slows development
+and introduces unnecessary failure points.
 
 Most editor functionality can be developed without real data.
 
 ## Decision
 
-The application will first use local mock character data.
+The application will first use local curated character data.
 
-Hakush integration will be added after the editor is functional.
+That local data pipeline will remain the primary approach unless a later
+decision introduces a new provider.
 
 ## Consequences
 
@@ -285,7 +289,8 @@ Hakush integration will be added after the editor is functional.
 
 ### Tradeoffs
 
-An adapter must later be written to replace the mock provider.
+The application still requires a clean adapter/provider boundary so local data
+can be swapped or extended later without changing the UI.
 
 ---
 

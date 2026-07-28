@@ -73,7 +73,7 @@ The board exists independently of how it is rendered.
 
 ---
 
-## External APIs Are Never Trusted
+## External Data Sources Are Never Trusted
 
 Third-party APIs may change.
 
@@ -111,17 +111,17 @@ Prefer many small files over one large file containing unrelated logic.
 
 ```
                 +----------------------+
-                |     Hakush API       |
+                | Local Game Data       |
                 +----------+-----------+
                            |
                            v
                 +----------------------+
-                |   Hakush Client       |
+                | Game Provider         |
                 +----------+-----------+
                            |
                            v
                 +----------------------+
-                |   Hakush Adapter      |
+                | Game Adapter          |
                 +----------+-----------+
                            |
                            v
@@ -140,7 +140,8 @@ Prefer many small files over one large file containing unrelated logic.
                 +----------------------+
 ```
 
-The editor depends on normalized character data rather than the Hakush API.
+The editor depends on normalized character data rather than any specific raw
+game data format.
 
 ---
 
@@ -180,7 +181,7 @@ src/
     registry.ts
 
     zzz/
-      Hakush integration.
+      ZZZ-specific data and adapters.
 
   hooks/
     Shared React hooks.
@@ -369,9 +370,9 @@ shared `Character` models before the rest of the application consumes them.
 
 ---
 
-# Hakush Integration
+# Game Data Integration
 
-Hakush should remain isolated.
+Game-specific data sources should remain isolated.
 
 Recommended structure:
 
@@ -380,22 +381,29 @@ games/
 
     zzz/
 
-        hakush-client.ts
+        data/
 
-        hakush-adapter.ts
+        zzz-provider.ts
+
+        zzz-adapter.ts
 ```
 
 Responsibilities:
 
-hakush-client.ts
+`data/`
 
-- HTTP requests
+- Stores local curated raw data for a specific game.
 
-hakush-adapter.ts
+`zzz-provider.ts`
 
-- Normalize responses
+- Loads the raw ZZZ data source.
 
-The rest of the application should never know Hakush exists.
+`zzz-adapter.ts`
+
+- Normalizes raw ZZZ data into shared application models.
+
+The rest of the application should never know or care about the raw source
+format for a game.
 
 ---
 

@@ -99,8 +99,9 @@ The first supported game is:
 
 - Zenless Zone Zero
 
-Character information will be retrieved from Hakush and transformed into the
-application's internal data model.
+Character information will initially come from local curated game data and be
+transformed into the application's internal data model through a game-specific
+provider or adapter layer.
 
 ## Future Games
 

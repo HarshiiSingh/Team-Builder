@@ -262,22 +262,22 @@ Allow boards to be shared.
 
 ---
 
-# Milestone 12 — Hakush Integration
+# Milestone 12 — Data Provider Hardening
 
 ## Goal
 
-Replace mock data with live character data.
+Strengthen the game data pipeline without changing editor behavior.
 
 ## Tasks
 
-- Create Hakush client.
-- Create adapter.
-- Normalize responses.
-- Replace mock provider.
+- Formalize provider interfaces.
+- Improve adapter structure.
+- Validate local curated game data.
+- Prepare the data pipeline for future game additions.
 
 ## Completion Criteria
 
-- Characters load from Hakush.
+- Characters load through a stable provider/adapter boundary.
 - UI behavior remains unchanged.
 
 ---

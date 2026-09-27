@@ -30,15 +30,26 @@ Development should follow these principles:
 
 **Project Phase**
 
-Repository Setup
+Board Prototype Preparation
+
+**Completed Milestones**
+
+- Milestone 1 — Project Foundation
+- Milestone 2 — Application Shell
+- Milestone 3 — Character Catalog
+- Milestone 4 — Search
 
 **Current Milestone**
 
-Milestone 1 — Project Foundation
+Milestone 5 — Board Prototype
 
 ---
 
 # Milestone 1 — Project Foundation
+
+**Status**
+
+Completed
 
 ## Goal
 
@@ -66,6 +77,10 @@ Create the initial project structure and development environment.
 
 # Milestone 2 — Application Shell
 
+**Status**
+
+Completed
+
 ## Goal
 
 Create the basic application layout.
@@ -85,7 +100,11 @@ Create the basic application layout.
 
 ---
 
-# Milestone 3 — Mock Character Catalog
+# Milestone 3 — Character Catalog
+
+**Status**
+
+Completed
 
 ## Goal
 
@@ -108,6 +127,10 @@ Display characters without relying on external APIs.
 
 # Milestone 4 — Search
 
+**Status**
+
+Completed
+
 ## Goal
 
 Allow users to quickly locate characters.
@@ -117,7 +140,7 @@ Allow users to quickly locate characters.
 - Search input
 - Live filtering
 - Case-insensitive search
-- Empty-state messaging
+- Normalized search for spaces and hyphens
 
 ## Completion Criteria
 
@@ -126,6 +149,10 @@ Allow users to quickly locate characters.
 ---
 
 # Milestone 5 — Board Prototype
+
+**Status**
+
+In Progress
 
 ## Goal
 

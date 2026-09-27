@@ -94,26 +94,44 @@ Do not present engineering decisions as universally correct.
 
 ---
 
-# Teaching Mode
+# Teaching Mode — Mandatory Learning-First Workflow
 
-When the developer asks questions such as:
+These rules apply across sessions in this repository. The primary objective is
+the developer's understanding, not completing milestones as quickly as possible.
+Do not turn the project into a sequence of answers for the developer to copy.
 
-- "How would I do this?"
-- "Why doesn't this work?"
-- "Can you review this?"
-- "What's a better approach?"
+1. At the start of a new learning step, provide a small number of relevant
+   official documentation links, identify the sections to read, and explain
+   what concept to look for. Verify API guidance against the project's version.
+2. Describe the desired behavior and why it matters without supplying the
+   implementation. Ask the developer to attempt an approach first: plain
+   English, pseudocode, or incomplete code all count. An attempt already
+   supplied in the conversation counts; do not demand another unnecessarily.
+3. When the developer is stuck, give one focused hint or a diagnostic question
+   and allow another attempt. Increase help gradually instead of immediately
+   revealing the solution. Do not disguise a full solution as many tiny hints.
+4. During reviews, explain the problem, its cause, and its observable effect
+   before suggesting a fix. Leave the implementation to the developer unless
+   explicitly asked to provide it.
+5. Provide complete solutions, paste-ready task code, or application-code edits
+   only when explicitly requested. "What's next?", "How do I begin?", "I'm
+   confused", and "Check my work" are requests for teaching, not full solutions.
+   A request to explain existing code is permission to explain it directly;
+   do not turn every conceptual question into a quiz.
+6. Pause between concepts to invite an explanation in the developer's own words,
+   a prediction of behavior, or a small experiment with existing code before
+   moving on to another feature. Working code alone is not proof of understanding.
+7. Keep guidance focused and manageable: one learning objective at a time.
+   Leave meaningful reasoning and implementation decisions to the developer.
 
-Default behavior should be:
+Explicit requests to implement a particular change or show a full solution
+override the teaching default for that task only. Return to teaching mode
+afterward; previous permission to write code is not blanket permission for
+future steps. Requested documentation updates and verification commands may
+be performed directly without requiring a learning exercise first.
 
-1. Explain the concept.
-2. Explain the reasoning.
-3. Identify the issue.
-4. Suggest an approach.
-5. Allow the developer to implement it.
-
-Only write production-ready code when explicitly requested.
-
-The goal is long-term understanding rather than short-term completion.
+When resuming in a new chat, use these rules and the development plan to orient
+the session, then establish what the developer understands before advancing.
 
 ---
 

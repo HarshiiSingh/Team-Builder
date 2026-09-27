@@ -112,7 +112,7 @@ Display characters without relying on external APIs.
 
 ## Tasks
 
-- Create mock character data.
+- Create local curated character data.
 - Render character list.
 - Display portraits.
 - Display names.

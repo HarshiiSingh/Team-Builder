@@ -1,4 +1,5 @@
 import { CharacterCatalog } from "@/features/character-catalog";
+import BoardEditor from "@/features/board-editor";
 import styles from "./page.module.css";
 export default function HomePage() {
   return (
@@ -6,6 +7,7 @@ export default function HomePage() {
       <CharacterCatalog />
       <section className={styles.board}>
         <h2>Team Board</h2>
+        <BoardEditor />
       </section>
     </main>
   );

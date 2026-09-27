@@ -362,9 +362,21 @@ Some temporary implementations may be replaced later as the project grows.
 
 ---
 
-# Future Decisions
+# Implementation Notes — 2026-09-27
 
-This section intentionally starts empty.
+The current prototype implements ADR-003 and ADR-005 with local React
+`BoardNode[]` state and derived React Flow nodes. The page supplies normalized
+characters through editor props; the custom portrait node only renders data.
+
+Catalog placement uses native HTML drag and drop for the desktop-first scope.
+The payload contains a character ID, which the editor validates before creating
+a distinct placement at converted board coordinates. No additional drag-and-drop
+dependency was needed for this implementation.
+
+ADR-002's game selection and ADR-008's local persistence describe intended
+behavior: the prototype currently opens ZZZ directly and does not save boards.
+
+# Future Decisions
 
 Future architectural decisions should be added whenever a significant design
 choice is made.

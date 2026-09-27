@@ -45,13 +45,25 @@ export function CharacterCatalog() {
       />
       <div className={styles.characterCatalog}>
         {results.map((character) => (
-          <div key={character.id} className={styles.characterCard}>
+          <div
+            key={character.id}
+            className={styles.characterCard}
+            draggable
+            onDragStart={(event) => {
+              event.dataTransfer.setData(
+                "application/x-character-id",
+                character.id,
+              );
+              event.dataTransfer.effectAllowed = "copy";
+            }}
+          >
             <Image
               alt={character.name}
               src={character.image}
               width={75}
               height={75}
               className={styles.characterImage}
+              draggable={false}
             />
             <p className={styles.characterName}>{character.name}</p>
           </div>

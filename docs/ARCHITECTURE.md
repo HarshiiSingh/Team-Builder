@@ -147,6 +147,22 @@ game data format.
 
 # Project Structure
 
+The tree below describes the intended organization as features grow, not an
+exact inventory of existing files. Current modules remain flat where simple.
+
+Current editor implementation:
+
+- `src/core/character.ts`: normalized `Character` model.
+- `src/core/board.ts`: `BoardNode`, `BoardEdge`, and `Board` models.
+- `src/games/zzz.ts`: adapts local JSON records to `Character[]`.
+- `src/app/page.tsx`: supplies the ZZZ catalog to `BoardEditor`.
+- `src/features/character-catalog.tsx`: searchable catalog and drag source;
+  currently imports the normalized ZZZ catalog directly.
+- `src/features/board-editor.tsx`: client component owning `BoardNode[]` state,
+  coordinate conversion, drop validation, and node creation.
+- `src/features/character-node.tsx` and its CSS module: portrait/name rendering
+  and the feature-layer `CharacterFlowNode` type.
+
 ```
 src/
 
@@ -216,7 +232,7 @@ Characters are shared application data, not board state.
 
 Recommended location:
 
-`src/core/characters.ts`
+`src/core/character.ts`
 
 Example:
 
@@ -363,7 +379,9 @@ interface GameProvider {
 }
 ```
 
-The editor communicates with providers rather than individual APIs.
+The provider interface above is a future target. Currently, `src/games/zzz.ts`
+normalizes local JSON and the page passes the resulting `Character[]` into the
+editor. The editor does not call a provider or API directly.
 
 A provider or adapter is responsible for converting game-specific records into
 shared `Character` models before the rest of the application consumes them.
@@ -411,6 +429,11 @@ format for a game.
 
 Initially, React state is sufficient.
 
+`BoardEditor` currently owns an initially empty `BoardNode[]` with `useState`.
+It derives `CharacterFlowNode[]` on each render by resolving each `characterId`
+against the supplied catalog. Name and image data are not duplicated in domain
+state. The full `Board` model and edges are not yet used as editor state.
+
 Introduce Zustand only when state begins to span multiple independent features.
 
 Avoid introducing global state prematurely.
@@ -427,9 +450,24 @@ Convert between React Flow models and application models when necessary.
 
 Never save React Flow objects directly.
 
+The custom `character` node is registered through a module-level `nodeTypes`
+object. `CharacterNode` receives display data through React Flow props and
+does not import game data or perform catalog lookups.
+
+Catalog drag-start writes a character ID under `application/x-character-id`
+with copy semantics. On drop, the editor validates membership in its catalog,
+uses the instance received through `onInit` to call `screenToFlowPosition`,
+and creates a `BoardNode` with a fresh `crypto.randomUUID()` ID. Repeated
+placements share character identity but have distinct node IDs.
+
+The controlled node list does not yet handle position, selection, or deletion
+changes. These are the next milestone, not completed React Flow integration.
+
 ---
 
 # Persistence
+
+Persistence is planned, not implemented. Current placements are lost on reload.
 
 Boards should be saved independently from the rendering library.
 

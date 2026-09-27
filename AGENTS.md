@@ -266,12 +266,25 @@ Primary stack:
 - TypeScript
 - App Router
 
-Planned libraries:
+React Flow (`@xyflow/react`) is used for the board. The editor currently uses
+local React state, not Zustand. Zustand, Zod, and `@dnd-kit/core` are already
+declared dependencies; their presence does not require using them in new work.
+Vitest is planned but not installed.
 
-- React Flow
-- Zustand
-- Zod
-- Vitest
+Current implementation guidance:
+
+- Consult `docs/DEVELOPMENT_PLAN.md` for milestone and verification status.
+- Pass normalized `Character[]` into `BoardEditor` through props.
+- Keep `BoardNode[]` as editor state and derive React Flow nodes for rendering.
+- Keep React Flow types in the feature layer, outside `src/core/`.
+- Catalog placement currently uses native HTML drag and drop with the
+  `application/x-character-id` data type. Validate the ID against the supplied
+  catalog and convert drop coordinates with `screenToFlowPosition`.
+- Generate a new node ID for each placement, including repeated characters.
+- Node movement, selection, and deletion still need state-change handling.
+
+There is currently no `openspec/` directory. Use the existing documentation
+and inspect for new specifications before future work.
 
 Do not introduce new dependencies unless they solve an immediate problem.
 

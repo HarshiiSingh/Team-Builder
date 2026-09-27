@@ -30,7 +30,7 @@ Development should follow these principles:
 
 **Project Phase**
 
-Board Prototype Preparation
+Character Placement Implemented — Browser Verification Pending
 
 **Completed Milestones**
 
@@ -41,7 +41,22 @@ Board Prototype Preparation
 
 **Current Milestone**
 
-Milestone 5 — Board Prototype
+Milestones 5–6 — implementation complete; final browser verification pending.
+
+**Next Milestone**
+
+Milestone 7 — Node Editing (not started)
+
+**Verification Record — 2026-09-27**
+
+- `npm run lint` passed.
+- `npm run build` passed, including TypeScript checking.
+- `git diff --check` passed.
+- These checks do not verify browser interactions. Before closing Milestones
+  5–6, confirm panning, zooming, portrait/name rendering on drop, correct drop
+  placement after panning/zooming, and separate placements of the same character.
+- The editor starts empty and stores placements only in memory. Reloading
+  clears them; persistence is a later milestone.
 
 ---
 
@@ -64,7 +79,7 @@ Create the initial project structure and development environment.
 - Create initial folder structure.
 - Add AGENTS.md.
 - Add documentation.
-- Create OpenSpec structure.
+- Create OpenSpec structure (deferred; no `openspec/` directory currently exists).
 
 ## Completion Criteria
 
@@ -152,7 +167,7 @@ Allow users to quickly locate characters.
 
 **Status**
 
-In Progress
+Implementation complete; browser verification pending.
 
 ## Goal
 
@@ -174,6 +189,10 @@ Introduce the graph editor.
 
 # Milestone 6 — Character Placement
 
+**Status**
+
+Implementation complete; browser verification pending.
+
 ## Goal
 
 Allow characters to be placed on the board.
@@ -193,6 +212,11 @@ Allow characters to be placed on the board.
 ---
 
 # Milestone 7 — Node Editing
+
+**Status**
+
+Next — not started. The controlled board currently has no change handlers for
+moving, selecting, or deleting existing nodes.
 
 ## Goal
 

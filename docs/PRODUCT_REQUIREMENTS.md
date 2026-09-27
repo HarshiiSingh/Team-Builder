@@ -25,6 +25,12 @@ architecture, maintainability, frontend engineering, and interactive UI design.
 
 # Goals
 
+This document describes the target product, including features that are not
+implemented yet. See `DEVELOPMENT_PLAN.md` for current implementation and
+verification status. The current prototype uses ZZZ directly; game selection,
+node editing, relationships, undo/redo, persistence, and exports remain future
+work.
+
 The primary goals of the application are:
 
 - Create an intuitive visual graph editor for game characters.

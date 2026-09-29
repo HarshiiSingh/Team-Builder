@@ -19,13 +19,14 @@ const nodeTypes = {
   character: CharacterNode,
 };
 export default function BoardEditor({ characters }: BoardEditorProps) {
-//   const sampleNode: BoardNode = {
-//     id: "node-1",
-//     characterId: "anby",
-//     position: { x: 100, y: 100 },
-//   };
+  //   const sampleNode: BoardNode = {
+  //     id: "node-1",
+  //     characterId: "anby",
+  //     position: { x: 100, y: 100 },
+  //   };
 
   const [boardNodes, setBoardNodes] = useState<BoardNode[]>([]);
+  console.log("Current boardNodes:", boardNodes);
   const [flowInstance, setFlowInstance] =
     useState<ReactFlowInstance<CharacterFlowNode> | null>(null);
   const flowNodes: CharacterFlowNode[] = boardNodes.map((boardNode) => {
@@ -79,6 +80,41 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
           addBoardNode(characterId, position);
         }}
         onInit={setFlowInstance}
+        onNodesChange={(changes) => {
+          console.log(
+            "Change types:",
+            changes.map((change) => change.type),
+          );
+          // boardNodes.map((boardNode) => {
+          //   const changeNode = changes.find((change) => change.type === "position" && change.id ===  boardNode.id)
+          //   if (changeNode?.type === "position" && changeNode.position) {
+          //     return {...boardNode, position: changeNode.position}
+          //   } else {
+          //     return boardNode
+          //   }
+
+          // })
+          
+          // Ignore batches without position updates: map() creates a new state array
+          // even when every node is unchanged, which can trigger a measurement/render loop.
+          const hasPositionChange = changes.some(
+            (change) => change.type === "position" && change.position,
+          );
+          if (!hasPositionChange) return;
+          setBoardNodes((currentNodes) =>
+            currentNodes.map((boardNode) => {
+              const changeNode = changes.find(
+                (change) =>
+                  change.type === "position" && change.id === boardNode.id,
+              );
+              if (changeNode?.type === "position" && changeNode.position) {
+                return { ...boardNode, position: changeNode.position };
+              } else {
+                return boardNode;
+              }
+            }),
+          );
+        }}
       >
         <Background
           id="1"

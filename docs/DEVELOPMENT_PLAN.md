@@ -30,7 +30,7 @@ Development should follow these principles:
 
 **Project Phase**
 
-Character Placement Implemented — Browser Verification Pending
+Node Editing — Learning and Planning
 
 **Completed Milestones**
 
@@ -38,14 +38,16 @@ Character Placement Implemented — Browser Verification Pending
 - Milestone 2 — Application Shell
 - Milestone 3 — Character Catalog
 - Milestone 4 — Search
+- Milestone 5 — Board Prototype
+- Milestone 6 — Character Placement
 
 **Current Milestone**
 
-Milestones 5–6 — implementation complete; final browser verification pending.
+Milestone 7 — Node Editing (implementation not started)
 
 **Next Milestone**
 
-Milestone 7 — Node Editing (not started)
+Milestone 8 — Relationships (not started)
 
 **Verification Record — 2026-09-27**
 
@@ -57,6 +59,13 @@ Milestone 7 — Node Editing (not started)
   placement after panning/zooming, and separate placements of the same character.
 - The editor starts empty and stores placements only in memory. Reloading
   clears them; persistence is a later milestone.
+
+**Browser Verification Record — 2026-09-28**
+
+- Developer confirmed all Milestones 5–6 browser checks passed: panning,
+  zooming, portrait/name rendering on drop, correct placement after panning
+  and zooming, and separate placements of the same character.
+- Milestones 5–6 are complete. Milestone 7 is now the active milestone.
 
 ---
 
@@ -167,7 +176,7 @@ Allow users to quickly locate characters.
 
 **Status**
 
-Implementation complete; browser verification pending.
+Completed — browser verification confirmed by the developer on 2026-09-28.
 
 ## Goal
 
@@ -191,7 +200,7 @@ Introduce the graph editor.
 
 **Status**
 
-Implementation complete; browser verification pending.
+Completed — browser verification confirmed by the developer on 2026-09-28.
 
 ## Goal
 
@@ -215,7 +224,7 @@ Allow characters to be placed on the board.
 
 **Status**
 
-Next — not started. The controlled board currently has no change handlers for
+Current — implementation not started. The controlled board currently has no change handlers for
 moving, selecting, or deleting existing nodes.
 
 ## Goal

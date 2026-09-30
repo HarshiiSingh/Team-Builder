@@ -29,6 +29,10 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
   console.log("Current boardNodes:", boardNodes);
   const [flowInstance, setFlowInstance] =
     useState<ReactFlowInstance<CharacterFlowNode> | null>(null);
+
+  const [nodeMeasurements, setNodeMeasurements] = useState<
+    Record<string, { width: number; height: number } | undefined>
+  >({});
   const flowNodes: CharacterFlowNode[] = boardNodes.map((boardNode) => {
     const character = characters.find(
       (character) => character.id === boardNode.characterId,
@@ -41,6 +45,7 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
         image: character?.image,
         label: character?.name ?? "Unknown character",
       },
+      measured: nodeMeasurements[boardNode.id],
     };
   });
   function addBoardNode(characterId: string, position: BoardNode["position"]) {
@@ -85,6 +90,7 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
             "Change types:",
             changes.map((change) => change.type),
           );
+          console.log("Node Changes:", changes);
           // boardNodes.map((boardNode) => {
           //   const changeNode = changes.find((change) => change.type === "position" && change.id ===  boardNode.id)
           //   if (changeNode?.type === "position" && changeNode.position) {
@@ -94,7 +100,25 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
           //   }
 
           // })
-          
+          const dimensionChanges = changes.filter(
+            (change) => change.type === "dimensions",
+          );
+          console.log("dimension:", dimensionChanges);
+          setNodeMeasurements((currentMeasurements) => {
+            console.log("currentMeasurements:", currentMeasurements);
+            let nextMeasurements = currentMeasurements;
+            for (const change of dimensionChanges) {
+              console.log("Dimension change:", change);
+              if (!change.dimensions) continue;
+              const previousMeasurement = nextMeasurements[change.id];
+              if (previousMeasurement?.width === change.dimensions.width && previousMeasurement?.height === change.dimensions.height) continue;
+              nextMeasurements = {
+                ...nextMeasurements,
+                [change.id]: change.dimensions,
+              };
+            }
+            return nextMeasurements;
+          });
           // Ignore batches without position updates: map() creates a new state array
           // even when every node is unchanged, which can trigger a measurement/render loop.
           const hasPositionChange = changes.some(

@@ -30,9 +30,8 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
   const [flowInstance, setFlowInstance] =
     useState<ReactFlowInstance<CharacterFlowNode> | null>(null);
 
-  const [nodeMeasurements, setNodeMeasurements] = useState<
-    Record<string, { width: number; height: number } | undefined>
-  >({});
+  const [nodeMeasurements, setNodeMeasurements] = useState<Record<string, { width: number; height: number } | undefined>>({});
+  const [nodeSelections, setNodeSelections] = useState<Record<string, boolean>>({});
   const flowNodes: CharacterFlowNode[] = boardNodes.map((boardNode) => {
     const character = characters.find(
       (character) => character.id === boardNode.characterId,
@@ -46,6 +45,7 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
         label: character?.name ?? "Unknown character",
       },
       measured: nodeMeasurements[boardNode.id],
+      selected: nodeSelections[boardNode.id] ?? false,
     };
   });
   function addBoardNode(characterId: string, position: BoardNode["position"]) {
@@ -100,6 +100,19 @@ export default function BoardEditor({ characters }: BoardEditorProps) {
           //   }
 
           // })
+          const selectionChanges = changes.filter((change) => change.type === "select");
+          console.log("selectionChange: ", selectionChanges);
+          setNodeSelections((currentSelections) => {
+            console.log("currentSelections: ", currentSelections);
+                let nextSelections = currentSelections;
+                for (const select of selectionChanges) {
+                  nextSelections = {
+                    ...nextSelections,
+                    [select.id]: select.selected,
+                  }
+                }
+                return nextSelections;
+          });
           const dimensionChanges = changes.filter(
             (change) => change.type === "dimensions",
           );
